@@ -1,0 +1,23 @@
+.header{
+    margin: 28px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+
+    height: 70vh;
+    justify-content: space-between;
+
+    width: 100vw;
+}
+
+.heroText{
+    font-size: 5rem;
+    font-weight: 400;
+
+    margin-left: 70px;
+
+}

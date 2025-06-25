@@ -1,0 +1,33 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: white;
+
+    border-radius: 100px;
+
+    width: fit-content;
+
+    padding: 13px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    /* Fixing it to the top */
+    position: fixed;
+    top: 40px;
+
+    /* Centering it */
+    left: 50%;
+    transform: translateX(-50%);
+}
