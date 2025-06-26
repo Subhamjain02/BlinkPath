@@ -7,3 +7,17 @@ body::selection {
   background: #f44336; /* highlight background color */
   color: white;       /* text color while selected */
 }
+
+html {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+margin: 0;
+padding: 0;
+}
