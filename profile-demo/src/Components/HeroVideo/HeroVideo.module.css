@@ -4,5 +4,17 @@
   margin: auto;
   margin-top: 170px;
   margin-bottom: 1000px;
+  padding: 100px 0px;
 
+}
+
+.inner{
+  width: 90%;
+  height: 100%;
+
+  margin: auto;
+
+  border-radius: 40px;
+
+  background-color: #1E1C1B;
 }

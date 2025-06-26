@@ -66,7 +66,7 @@ export default function HeroVideo() {
           width:        `${widthPct}%`,
         }}
       >
-        <div className={styles.outer}></div>
+        <div className={styles.inner}></div>
       </div>
     </div>
   );
