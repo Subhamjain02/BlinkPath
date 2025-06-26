@@ -23,6 +23,8 @@ box-sizing: inherit;
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+    z-index: 1000;
+
     /* Fixing it to the top */
     position: fixed;
     top: 40px;
