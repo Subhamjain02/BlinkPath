@@ -18,8 +18,9 @@ const StyledWrapper = styled.div`
     font-size: 16px;
     border: none;
     background: none;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    margin: 0 20px;
   }
 
   button::before {
