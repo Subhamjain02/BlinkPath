@@ -5,7 +5,4 @@
   margin-top: 170px;
   margin-bottom: 1000px;
 
-  transition:
-    border-radius 0.2s ease-out,
-    width         0.2s ease-out;
 }
