@@ -1,0 +1,46 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    background: #000;
+    cursor: pointer;
+    transition:
+    border-radius 500ms ease-in-out,
+    transform     500ms ease-in-out;
+    will-change: border-radius, transform;
+
+    position: relative;
+
+    /* flex-shrink: 0; */
+
+    margin: 0;
+}
+
+
+/* .card::after{
+    position: absolute;
+    content: 'Hello';
+} */
+
+
+.card:hover {
+  border-radius: 1000px;
+}
+.coverImage,
+.coverVideo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.coverImage {
+  transition: opacity 300ms ease-in-out;
+}
+.coverVideo {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.visible {
+  opacity: 1;
+}
