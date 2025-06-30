@@ -1,45 +1,38 @@
-import React from 'react'
-import styles from './OurWork.module.css'
-import OurWorkText from './OurWorkText'
-import OurWorkNumber from './OurWorkNumber'
+import React, { useState } from 'react';
+import styles from './OurWork.module.css';
+import OurWorkText from './OurWorkText';
+import OurWorkNumber from './OurWorkNumber';
+import Card from './Card/Card';
+import CircleFollower from './CircleFollower';
+import poster from './Card/assets/mrityu.webp';
+import clip   from './Card/assets/Movie on 27-06-25 at 4.46 PM.mov';
 
+export default function OurWork() {
+  // track if any card is hovered + cursor pos
+  const [hovered, setHovered] = useState(false);
+  const [pos, setPos] = useState({ x: 0, y: 0 });
 
-import Card from './Card/Card'
-import poster from './Card/assets/mrityu.webp'
-import clip   from './Card/assets/Movie on 27-06-25 at 4.46 PM.mov'
-import CardText from './Card/CardText'
-
-function OurWork() {
   return (
     <div className={styles.container}>
-        <div className={styles.textNumberContainer}>
-            <OurWorkText/>
-            <OurWorkNumber className = {styles.num}/>
-        </div>
-        <div className= {styles.cardsContainer}>
-            <Card
-            imageSrc={poster}
-            videoSrc={clip}
-            />
-            <Card
-            imageSrc={poster}
-            videoSrc={clip}
-            />
-            <Card
-            imageSrc={poster}
-            videoSrc={clip}
-            />
-            <Card
-            imageSrc={poster}
-            videoSrc={clip}
-            />
-            <Card
-            imageSrc={poster}
-            videoSrc={clip}
-            />
-        </div>
-    </div>
-  )
-}
+      <div className={styles.textNumberContainer}>
+        <OurWorkText />
+        <OurWorkNumber className={styles.num} />
+      </div>
 
-export default OurWork
+      {/* global SVG follower, fixed to viewport */}
+      {hovered && <CircleFollower x={pos.x} y={pos.y} />}
+
+      <div className={styles.cardsContainer}>
+        {Array.from({ length: 5 }).map((_, idx) => (
+          <Card
+            key={idx}
+            imageSrc={poster}
+            videoSrc={clip}
+            onHoverChange={setHovered}
+            onHoverMove={setPos}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
