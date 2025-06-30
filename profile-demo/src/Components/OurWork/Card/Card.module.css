@@ -4,20 +4,46 @@
   border-radius: 40px;
   background: #000;
   cursor: pointer;
+
+  /* Smoothly animate border-radius, plus any transforms you might add later */
+  transition:
+    border-radius 800ms ease-in-out,
+    transform     800ms ease-in-out;
+
+  will-change: border-radius, transform;
 }
+
+.card:hover {
+  border-radius: 10000px;
+}
+
 .coverImage,
 .coverVideo {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+
+  transition: opacity 300ms ease-in-out;
 }
-.coverImage { transition: opacity 300ms ease-in-out; }
-.coverVideo { opacity: 0; transition: opacity 300ms; }
-.card:hover .coverVideo { opacity: 1; }
-.card:hover{
-    border-radius: 10000px;
+
+/* Fade the poster out */
+.coverImage {
+  transition: opacity 300ms ease-in-out;
+}
+
+/* Fade the video in */
+.coverVideo {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.card:hover .coverVideo {
+  opacity: 1;
+}
+
+.card:hover .coverImage {
+  opacity: 0;
 }
