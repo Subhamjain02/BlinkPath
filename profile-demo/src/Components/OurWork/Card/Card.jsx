@@ -8,11 +8,11 @@ export default function Card({ imageSrc, videoSrc, width = 630, height = 630, on
   const handleEnter = e => {
     onHoverChange(true);
     const rect = ref.current.getBoundingClientRect();
-    onHoverMove({ x: e.clientX, y: e.clientY });
+    onHoverMove({ x: e.clientX - 120, y: e.clientY - 120});
     videoRef.current && (videoRef.current.currentTime = 0, videoRef.current.play());
   };
   const handleMove = e => {
-    onHoverMove({ x: e.clientX, y: e.clientY });
+    onHoverMove({ x: e.clientX - 120, y: e.clientY - 120});
   };
   const handleLeave = () => {
     onHoverChange(false);
