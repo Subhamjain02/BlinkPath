@@ -70,10 +70,13 @@
   align-content: flex-start;
 
   flex-wrap: wrap;
-  gap: 150px 50px;
+  gap: 80px 50px;
 
   padding: 100px 0;
 
   padding-left: calc((100vw - (2 * 630px) - 50px) / 2);
 }
 
+.innertT{
+  margin-left: 100px;
+}

@@ -14,7 +14,7 @@
 }
 
 .card:hover {
-  border-radius: 10000px;
+  border-radius: 1000px;
 }
 
 .coverImage,
@@ -26,18 +26,18 @@
   object-fit: cover;
   pointer-events: none;
 
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 /* Fade the poster out */
 .coverImage {
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 /* Fade the video in */
 .coverVideo {
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 .card:hover .coverVideo {
