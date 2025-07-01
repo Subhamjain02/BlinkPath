@@ -27,3 +27,17 @@
     font-weight: 400;
     margin-left: 70px;
 }
+
+.container{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 100px;
+    gap: 120px;
+    /* height: fit-content; */
+    /* align-items: flex-start; */
+}
+
+.orbit{
+    margin-top: -70px;
+    
+}
