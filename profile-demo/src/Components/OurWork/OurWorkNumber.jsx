@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Accept className and forward it
-const OurWorkNumber = ({ className }) => {
+const OurWorkNumber = ({ className, num }) => {
   return (
     <StyledWrapper className={className}>
       <button data-text="Awesome" className="button">
-        <span className="actual-text"> 01 </span>
-        <span className="hover-text" aria-hidden="true"> 01 </span>
+        <span className="actual-text"> {num} </span>
+        <span className="hover-text" aria-hidden="true"> {num} </span>
       </button>
     </StyledWrapper>
   );

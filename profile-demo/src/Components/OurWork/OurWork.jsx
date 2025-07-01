@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './OurWork.module.css';
-import OurWorkText from './OurWorkText';
+import SectionText from './SectionText';
 import OurWorkNumber from './OurWorkNumber';
 import Card from './Card/Card';
 import CircleFollower from './CircleFollower';
@@ -14,11 +14,15 @@ export default function OurWork() {
   const [hovered, setHovered] = useState(false);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
+  const text = "Global teams trust us to take on complex challenges, push creative boundaries, and move fast when it matters most. We bring clarity, momentum, and a little heat to every project."
+  const title = "Our Work"
+  const num = "01"
+
   return (
     <div className={styles.container}>
       <div className={styles.textNumberContainer}>
-        <OurWorkText />
-        <OurWorkNumber className={styles.num} />
+        <SectionText text = {text} title = {title}/>
+        <OurWorkNumber className={styles.num} num = {num}/>
       </div>
 
       {/* global SVG follower, fixed to viewport */}
