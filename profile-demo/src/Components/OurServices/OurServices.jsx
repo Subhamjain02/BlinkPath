@@ -4,6 +4,7 @@ import SectionText from '../OurWork/SectionText'
 import OurWorkNumber from '../OurWork/OurWorkNumber'
 
 import Card from "./Card/Card"
+import CardCarousel from './CardCarousel'
 
 function OurServices() {
 
@@ -23,12 +24,8 @@ function OurServices() {
         <OurWorkNumber className={styles.num} num = {num}/>
       </div>
 
-      <div className={`${styles.cardsContainer} flex gap-[30px]`}>
-        <Card cardNum = {cardNum} cardTitle = {cardTitle} cardText = {cardText}/>
-        <Card cardNum = {cardNum} cardTitle = {cardTitle} cardText = {cardText}/>
-      </div>
-
-
+      <CardCarousel/>
+      
     </div>
   )
 }
