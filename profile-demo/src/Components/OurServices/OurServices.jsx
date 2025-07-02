@@ -25,7 +25,8 @@ function OurServices() {
       </div>
 
       <CardCarousel/>
-      
+
+      <div className="h-[100vh]"></div>
     </div>
   )
 }
