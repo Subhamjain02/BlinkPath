@@ -153,11 +153,11 @@ const OrbitBase = styled.div`
 `;
 
 const OuterOrbit = styled(OrbitBase)`
-  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border: 1.5px dashed rgba(0, 0, 0, 0.5);
 `;
 
 const InnerOrbit = styled(OrbitBase)`
-  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border: 1.5px dashed rgba(0, 0, 0, 0.5);
 `;
 
 const OrbitCircle = styled.div`

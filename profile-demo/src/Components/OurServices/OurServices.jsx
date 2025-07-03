@@ -13,10 +13,6 @@ function OurServices() {
   const title = "Our Services"
   const num = "02"
 
-  const cardNum = "01"
-  const cardTitle = "AI UX"
-  const cardText = "AI-driven experiences that help users work smarter, faster, and with confidence. Whether AI is the product or just powering part of it, what matters most is how it feels to use—and whether people come back to it."
-
   return (
     <div className={styles.container}>
       <div className={styles.textNumberContainer}>
@@ -26,7 +22,7 @@ function OurServices() {
 
       <CardCarousel/>
 
-      <div className="h-[100vh]"></div>
+      <div className="h-[100vh] bg-red-200"></div>
     </div>
   )
 }
