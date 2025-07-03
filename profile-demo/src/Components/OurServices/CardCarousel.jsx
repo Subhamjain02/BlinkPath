@@ -4,6 +4,8 @@ import { useRef } from "react";
 import Card from "./Card/Card";
 import SlideUpPanel from "./SlideUpPanel";
 
+import SlideUpPanelText from "./SlideUpPanelText/SlideUpPanelText";
+
 const CardCarousel = () => {
   const targetRef = useRef(null);
 
@@ -35,12 +37,10 @@ const CardCarousel = () => {
         scrollYProgress={scrollYProgress}
         start={0}
         end={1}
-        className="bg-[#faebd7] flex items-center justify-center h-[100vh] rounded-t-[50px] sticky top-0"
+        className="bg-[#e9e9e9] h-[100vh] absolute w-full overflow-hidden rounded-t-[50px] sticky top-[0px]"
       >
-        {/* Now you can put anything here! */}
-        <div className="p-8 text-centerx">
-          <h2 className="text-3xl font-bold mb-4">Next Section</h2>
-          <p>Add your custom content here.</p>
+        <div className="mt-[-10000px]">
+          <SlideUpPanelText/>
         </div>
       </SlideUpPanel>
 

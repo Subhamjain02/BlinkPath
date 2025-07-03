@@ -1,0 +1,17 @@
+.textNumberContainer{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    position: relative;
+}
+
+.num{
+    align-self: flex-end;
+}
+
+.container{
+    /* height: 300vh; */
+    /* width: 100vw; */
+    background-color: #e9e9e9;
+}

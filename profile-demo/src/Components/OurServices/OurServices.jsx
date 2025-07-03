@@ -16,13 +16,13 @@ function OurServices() {
   return (
     <div className={styles.container}>
       <div className={styles.textNumberContainer}>
-        <SectionText text = {text} title = {title}/>
+        <SectionText text = {text} title = {title} className = "text-black"/>
         <OurWorkNumber className={styles.num} num = {num}/>
       </div>
 
       <CardCarousel/>
 
-      <div className="h-[100vh] bg-red-200"></div>
+      <div className="h-[100vh] bg-[#e9e9e9]"></div>
     </div>
   )
 }

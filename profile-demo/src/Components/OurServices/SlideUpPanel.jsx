@@ -18,7 +18,7 @@ export default function SlideUpPanel({
   return (
     <motion.div
       style={{ y }}
-      className={`absolute top-[850vh] w-full h-screen ${className}`}
+      className={`absolute top-[850vh] w-full ${className}`}
     >
       {children}
     </motion.div>
