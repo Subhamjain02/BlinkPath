@@ -6,6 +6,8 @@ import OurWorkNumber from '../OurWork/OurWorkNumber'
 import Card from "./Card/Card"
 import CardCarousel from './CardCarousel'
 
+import ScrollUpCards from './ScrollUpCards/ScrollUpCards'
+
 function OurServices() {
 
 
@@ -21,6 +23,10 @@ function OurServices() {
       </div>
 
       <CardCarousel/>
+
+      <div className="bg-[#e9e9e9]">
+        <ScrollUpCards/>
+      </div>
 
       <div className="h-[100vh] bg-[#e9e9e9]"></div>
     </div>

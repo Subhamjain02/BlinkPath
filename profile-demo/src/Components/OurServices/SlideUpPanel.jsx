@@ -12,7 +12,7 @@ export default function SlideUpPanel({
   const y = useTransform(
     scrollYProgress,
     [start, end],
-    ["100%", "0%"]
+    ["100%", "50%"]
   );
 
   return (

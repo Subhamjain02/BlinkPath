@@ -5,6 +5,7 @@ import Card from "./Card/Card";
 import SlideUpPanel from "./SlideUpPanel";
 
 import SlideUpPanelText from "./SlideUpPanelText/SlideUpPanelText";
+import ScrollUpCards from "./ScrollUpCards/ScrollUpCards";
 
 const CardCarousel = () => {
   const targetRef = useRef(null);
@@ -39,9 +40,11 @@ const CardCarousel = () => {
         end={1}
         className="bg-[#e9e9e9] h-[100vh] absolute w-full overflow-hidden rounded-t-[50px] sticky top-[0px]"
       >
-        <div className="mt-[-10000px]">
+        <div className="">
           <SlideUpPanelText/>
         </div>
+
+        
       </SlideUpPanel>
 
 
