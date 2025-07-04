@@ -5,7 +5,7 @@ export default function ScrollUpCards() {
     <div className="relative ">
       
       {/* spacer so first card comes in at 50vh */}
-      <div className="h-[25vh]" />
+      {/* <div className="h-[-25vh]" /> */}
 
       {/* Card A */}
       <div className="sticky top-0 h-screen flex items-center justify-center z-10">

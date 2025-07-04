@@ -3,7 +3,7 @@ import { motion, useTransform } from "framer-motion";
 
 export default function SlideUpPanel({
   scrollYProgress,
-  start = 0.7,
+  start = 0.5,
   end   = 0.8,
   children,
   className = ""
@@ -12,7 +12,7 @@ export default function SlideUpPanel({
   const y = useTransform(
     scrollYProgress,
     [start, end],
-    ["100%", "50%"]
+    ["100%", "20%"]
   );
 
   return (

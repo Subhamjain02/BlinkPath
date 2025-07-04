@@ -38,7 +38,7 @@ const CardCarousel = () => {
         scrollYProgress={scrollYProgress}
         start={0}
         end={1}
-        className="bg-[#e9e9e9] h-[100vh] absolute w-full overflow-hidden rounded-t-[50px] sticky top-[0px]"
+        className="bg-[#e9e9e9] h-[120vh] absolute w-full overflow-hidden rounded-t-[50px] sticky"
       >
         <div className="">
           <SlideUpPanelText/>
