@@ -33,7 +33,7 @@ function OurServices() {
 
       <div className={`${styles.textNumberContainer2} mt-[60px]`}>
         <p className={`${styles.text} w-[660px]`}>{text2}</p>
-        <SlideUpNum className={styles.num} num = "03"/>
+        <SlideUpNum className={styles.num} num = "04"/>
       </div>
 
       
