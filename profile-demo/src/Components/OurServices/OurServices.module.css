@@ -28,3 +28,29 @@
 .cardsContainer{
     margin-top: 50px;
 }
+
+.textNumberContainer2{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    background-color: #e9e9e9;
+}
+
+.textNumberContainer2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;    
+  left: 5%;           
+  width: 90%;             
+  height: 1px;            
+  background-color: #1D1C1B;  
+}
+
+.text{
+    font-size: 3.5rem;
+
+    line-height: 1;
+}
+
