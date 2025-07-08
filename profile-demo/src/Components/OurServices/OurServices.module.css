@@ -41,10 +41,10 @@
 .textNumberContainer2::after {
   content: "";
   position: absolute;
-  bottom: 0;    
+  bottom: -1.01px;    
   left: 5%;           
   width: 90%;             
-  height: 1px;            
+  height: 1.01px;            
   background-color: #1D1C1B;  
 }
 
