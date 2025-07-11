@@ -4,7 +4,8 @@ import HeroVideo from "./Components/HeroVideo/HeroVideo"
 import OurWork from "./Components/OurWork/OurWork"
 import OurServices from "./Components/OurServices/OurServices"
 import AboutUs from "./Components/AboutUs/AboutUs"
-import TempAbout from "./Components/TempAbout.jsx/TempAbout"
+import AboutUsText from "./Components/AboutUsText/AboutUsText"
+
 
 function App() {
   return <>
@@ -15,8 +16,8 @@ function App() {
     <OurWork/>
     <OurServices/>
     <AboutUs/>
-    {/* <TempAbout/> */}
-    <div className="h-[100vh]"></div>
+    <AboutUsText/>
+    <div className="h-screen"></div>
 
   </>
 }
