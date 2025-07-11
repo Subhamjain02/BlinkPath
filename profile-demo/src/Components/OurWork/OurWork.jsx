@@ -5,7 +5,7 @@ import OurWorkNumber from './OurWorkNumber';
 import Card from './Card/Card';
 import CircleFollower from './CircleFollower';
 import poster from './Card/assets/mrityu.webp';
-import clip   from './Card/assets/Movie on 27-06-25 at 4.46 PM.mov';
+import clip   from './Card/assets/vid1.mov';
 
 import CardText from './Card/CardText';
 

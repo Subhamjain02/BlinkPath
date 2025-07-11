@@ -1,4 +1,4 @@
-#section::before {
+#section::after {
   content: "";
   position: absolute;
   left: 0;     
@@ -24,13 +24,3 @@ li span{
     position: relative;
     left: -20px;
 }
-/* 
-#list::before{
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: -3px;           
-  width: 90vw;             
-  height: 1px;            
-  background-color: #1D1C1B;  
-} */

@@ -13,7 +13,9 @@ function AboutUs() {
   return (
     <div className='flex justify-center space-between'>
         <div id={styles.container} className='flex'>
-            <li id={styles.list} className='relative'><span>About Us</span></li>
+            <div className='h-[200vh]'>
+              <li id={styles.list} className='relative sticky top-[140px]'><span>About Us</span></li>
+            </div>
             <div className='flex flex-col'>
                 {sections.map((section, i) => (
                 <Section 
@@ -21,15 +23,16 @@ function AboutUs() {
                     num={section.num} 
                     title={section.title} 
                     text={section.text}
-                    style={{
-                        top: i === 0 ? '100px' : `${(i * 190) + 100}px`,
-                        zIndex: 10 + i,
-                        }}
+                    topOffset = {(i * 148) + 100}
+                    i = {i}
+                    // style={{
+                    //     top: i === 0 ? '100px' : `${(i * 190) + 100}px`,
+                    //     zIndex: 10 + i,
+                    //     }}
                 />
                 ))}
             </div>
         </div>
-        <div className='h-[100vh]'></div>
     </div>
   )
 }

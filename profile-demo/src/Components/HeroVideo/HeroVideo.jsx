@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HeroVideo.module.css';
 
+import vid1 from './assets/vid2.mp4';
+
 export default function HeroVideo() {
   const containerRef     = useRef(null);
   const initialTopOffset = useRef(0);
@@ -100,7 +102,16 @@ export default function HeroVideo() {
             width:        `${innerWidthPct}%`,
             opacity:      innerOpacity,
           }}
-        />
+        >
+            <video 
+            className={styles.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            src = {vid1}
+          />
+        </div>
       </div>
     </div>
   );

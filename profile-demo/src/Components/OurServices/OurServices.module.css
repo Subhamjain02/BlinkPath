@@ -41,7 +41,7 @@
 .textNumberContainer2::after {
   content: "";
   position: absolute;
-  bottom: -1.01px;    
+  bottom: 2.0px;    
   left: 5%;           
   width: 90%;             
   height: 1.01px;            
