@@ -5,6 +5,7 @@ import OurWork from "./Components/OurWork/OurWork"
 import OurServices from "./Components/OurServices/OurServices"
 import AboutUs from "./Components/AboutUs/AboutUs"
 import AboutUsText from "./Components/AboutUsText/AboutUsText"
+import Parallax from "./Components/Parallax/Parallax"
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     <OurServices/>
     <AboutUs/>
     <AboutUsText/>
-    <div className="h-screen"></div>
+    <Parallax/>
+    {/* <div className="h-screen"></div> */}
 
   </>
 }
