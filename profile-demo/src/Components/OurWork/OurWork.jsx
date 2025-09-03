@@ -4,8 +4,12 @@ import SectionText from './SectionText';
 import OurWorkNumber from './OurWorkNumber';
 import Card from './Card/Card';
 import CircleFollower from './CircleFollower';
-import poster from './Card/assets/mrityu.webp';
-import clip   from './Card/assets/vid1.mov';
+import img1 from './Card/assets/img1.png';
+import img2 from './Card/assets/img2.png';
+import img3 from './Card/assets/img3.png';
+import img4 from './Card/assets/img2.png';
+import img5 from './Card/assets/img1.png';
+import clip   from './Card/assets/vid2.mp4';
 
 import CardText from './Card/CardText';
 
@@ -13,6 +17,8 @@ export default function OurWork() {
   // track if any card is hovered + cursor pos
   const [hovered, setHovered] = useState(false);
   const [pos, setPos] = useState({ x: 0, y: 0 });
+
+  const images = [img1, img2, img3, img4, img5];
 
   const text = "Global teams trust us to take on complex challenges, push creative boundaries, and move fast when it matters most. We bring clarity, momentum, and a little heat to every project."
   const title = "Our Work"
@@ -33,7 +39,7 @@ export default function OurWork() {
           <div className = "flex flex-col gap-[40px]">
             <Card
               key={idx}
-              imageSrc={poster}
+              imageSrc={images[idx]}
               videoSrc={clip}
               onHoverChange={setHovered}
               onHoverMove={setPos}
